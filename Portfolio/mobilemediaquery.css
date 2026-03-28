@@ -1,0 +1,579 @@
+/* ================================================
+   RESPONSIVE MEDIA QUERIES — Sarthak Arya Portfolio
+   Mobile  : max-width 600px
+   Tablet  : 601px – 1024px
+   ================================================ */
+
+
+/* ================================================
+   MOBILE  (0px – 600px)
+   ================================================ */
+
+@media (max-width: 600px) {
+
+  /* --- GENERAL --- */
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+
+  /* --- NAVBAR --- */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 10px;
+    border-bottom: 2px solid #e0e0e0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .logo-text {
+    font-size: 22px;
+    margin: -0.7rem;
+  }
+
+  .nav-items {
+    padding: 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .nav-items div {
+    font-size: 14px;
+  }
+
+  /* --- HERO SECTION --- */
+  .my-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+  }
+
+  .faded-text {
+    display: none;
+  }
+
+  .my-section-left {
+    align-items: center;
+    order: 2;
+  }
+
+  .my-section-right {
+    order: 1;
+  }
+
+  .my-section-left-heading1 {
+    font-size: 22px;
+  }
+
+  .my-section-left-heading2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .my-section-left-discription {
+    width: 100%;
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .my-section-left-btn {
+    font-size: 15px;
+    padding: 0.6rem 1.8rem;
+  }
+
+  .user-image {
+    padding: 1rem;
+  }
+
+  .user-image img {
+    width: 200px;
+  }
+
+  /* Hide floating decorative icons on mobile */
+  .icon-dot,
+  .icon-cube,
+  .icon-circle,
+  .icon-zigzag,
+  .icon-plus {
+    display: none;
+  }
+
+  /* --- PROJECTS --- */
+  .project-section-heading {
+    font-size: 2.5rem;
+    padding-top: 20px;
+  }
+
+  .project-container {
+    width: 100%;
+    padding: 1.5rem 5%;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .project-card {
+    width: 100%;
+    height: auto;
+    min-height: 360px;
+    box-shadow: 0 0 20px #1f1f1f;
+  }
+
+  .project-content {
+    position: relative;
+    left: 0 !important;
+    bottom: 0;
+    padding: 1.2em;
+    gap: 0.7em;
+  }
+
+  .project-content-left,
+  .project-content-right {
+    left: 0;
+  }
+
+  .project-tech-stack {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .project-tech {
+    width: 30px;
+  }
+
+  .project-heading {
+    font-size: 28px;
+    line-height: 2rem;
+  }
+
+  .project-discription {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .project-number {
+    font-size: 100px;
+  }
+
+  #project-card2,
+  #project-card4 {
+    margin-left: 0;
+  }
+
+  /* --- SKILLS --- */
+  .my-skills {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .skill-fadded-text {
+    display: none;
+  }
+
+  .my-skills-left,
+  .my-skills-right {
+    width: 100%;
+    align-items: center;
+  }
+
+  .skill-heading {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .caps {
+    font-size: 55px;
+  }
+
+  .skill-intro {
+    width: 100%;
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .skills-logo {
+    width: 55px;
+  }
+
+  .blob {
+    width: 200px;
+  }
+
+  /* --- CONTACT --- */
+  .contact-me {
+    overflow-x: hidden;
+  }
+
+  .contact-heading {
+    font-size: 2.2rem;
+    padding-top: 1.5rem;
+  }
+
+  .contact-heading-sub {
+    font-size: 1.1rem;
+  }
+
+  .contact-me-form-container {
+    margin-top: 15px;
+  }
+
+  .form {
+    width: 100%;
+    margin: 1rem 0;
+    gap: 20px;
+  }
+
+  .form-field {
+    font-size: 15px;
+    padding: 0 1rem;
+  }
+
+  #submit-btn {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.5rem;
+    margin: 0;
+  }
+
+  /* --- FOOTER --- */
+  .footer {
+    padding: 2rem 1rem 4rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .footer-name {
+    font-size: 1.8rem;
+    position: static;
+  }
+
+  .footer-media {
+    gap: 1rem;
+  }
+
+  .footer-media a i {
+    font-size: 1.5rem;
+  }
+
+  /* --- SCROLL UP --- */
+  .scroll-up {
+    bottom: 14px;
+    right: 14px;
+    height: 35px;
+    width: 35px;
+  }
+
+  .scroll-up i {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* ================================================
+   TABLET  (601px – 1024px)
+   ================================================ */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  /* --- GENERAL --- */
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+
+  /* --- NAVBAR --- */
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 65px;
+  }
+
+  .logo-text {
+    font-size: 26px;
+    margin: -1rem;
+  }
+
+  .nav-items {
+    padding: 0 1rem;
+    gap: 1.2rem;
+  }
+
+  .nav-items div {
+    font-size: 17px;
+  }
+
+  /* --- HERO SECTION --- */
+  .my-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+    margin: 2.5rem auto;
+    padding: 0 2rem 4rem;
+  }
+
+  .faded-text {
+    display: none;
+  }
+
+  .my-section-left {
+    align-items: center;
+    order: 2;
+  }
+
+  .my-section-right {
+    order: 1;
+  }
+
+  .my-section-left-heading1 {
+    font-size: 28px;
+  }
+
+  .my-section-left-heading2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .my-section-left-discription {
+    width: 85%;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .my-section-left-btn {
+    font-size: 16px;
+    padding: 0.7rem 2rem;
+  }
+
+  .user-image {
+    padding: 1.5rem;
+  }
+
+  .user-image img {
+    width: 300px;
+  }
+
+  /* Slightly reduce decorative icons on tablet */
+  .icon-dot img,
+  .icon-cube img,
+  .icon-circle img,
+  .icon-zigzag img,
+  .icon-plus img {
+    width: 35px;
+  }
+
+  /* --- PROJECTS --- */
+  .project-section-heading {
+    font-size: 3.5rem;
+    padding-top: 24px;
+  }
+
+  .project-container {
+    width: 100%;
+    padding: 2rem 5%;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .project-card {
+    width: 95%;
+    height: 420px;
+  }
+
+  .project-content {
+    bottom: 12%;
+    padding: 1.5em;
+    gap: 0.8em;
+  }
+
+  .project-content-left {
+    left: 5%;
+  }
+
+  .project-content-right {
+    left: 10%;
+  }
+
+  .project-tech-stack {
+    width: 80%;
+  }
+
+  .project-tech {
+    width: 34px;
+  }
+
+  .project-heading {
+    font-size: 36px;
+    line-height: 2.5rem;
+  }
+
+  .project-discription {
+    width: 85%;
+    font-size: 15px;
+  }
+
+  .project-number {
+    font-size: 130px;
+  }
+
+  #project-card2,
+  #project-card4 {
+    margin-left: 0;
+  }
+
+  /* --- SKILLS --- */
+  .my-skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2.5rem 1.5rem;
+    margin: 3rem auto;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .skill-fadded-text {
+    display: none;
+  }
+
+  .my-skills-left {
+    width: 45%;
+    align-items: flex-start;
+  }
+
+  .my-skills-right {
+    width: 50%;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .skill-heading {
+    font-size: 36px;
+  }
+
+  .caps {
+    font-size: 68px;
+  }
+
+  .skill-intro {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .skills-logo {
+    width: 70px;
+  }
+
+  .blob {
+    width: 240px;
+  }
+
+  /* --- CONTACT --- */
+  .contact-me {
+    overflow-x: hidden;
+    padding: 0 20px;
+  }
+
+  .contact-heading {
+    font-size: 3rem;
+    padding-top: 2rem;
+  }
+
+  .contact-heading-sub {
+    font-size: 1.8rem;
+  }
+
+  .form {
+    width: 85%;
+    margin: 1.5rem 2rem;
+    gap: 24px;
+  }
+
+  .form-field {
+    font-size: 16px;
+  }
+
+  #submit-btn {
+    font-size: 1.2rem;
+  }
+
+  /* --- FOOTER --- */
+  .footer {
+    padding: 3rem 2rem 5rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-links {
+    gap: 1rem;
+  }
+
+  .footer-name {
+    font-size: 3rem;
+    position: static;
+  }
+
+  .footer-media {
+    gap: 1.2rem;
+  }
+
+  .footer-media a i {
+    font-size: 1.8rem;
+  }
+
+  /* --- SCROLL UP --- */
+  .scroll-up {
+    bottom: 16px;
+    right: 16px;
+    height: 38px;
+    width: 38px;
+  }
+
+  .scroll-up i {
+    font-size: 1.7rem;
+  }
+}

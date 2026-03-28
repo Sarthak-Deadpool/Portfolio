@@ -1,0 +1,72 @@
+.my-skills{
+    position: relative;
+    display: flex;
+    margin: 5rem auto;
+    padding: 5em;
+    gap: 30px;
+}
+
+.my-skills-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-heading{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--bgOrange);
+}
+
+.caps{
+    font-size: 90px;
+}
+
+.skill-intro{
+    margin-top: 1rem;
+    width: 85%;
+    text-align: justify;
+}
+.skill-intro p{
+    margin:15px 0;
+}
+.my-skills-right{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 2rem;
+    justify-content: center;
+}
+.skill-fadded-text{
+    user-select: none;
+    font-size: 7em;
+    color: rgb(231, 231, 231);
+    bottom: -15%;
+    right:-12%;
+    font-weight: bold;
+    transition: all 3s;
+    position: absolute;
+}
+.blob{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    animation: blobAnimation 3s linear infinite;
+}
+
+@keyframes blobAnimation {
+    50%{
+        top:54%;
+        left:46%
+    }
+}
+.skills-logo{
+    width: 90px;
+    transition: all 0.5s;
+}
+.skills-logo:hover{
+    transform: scale(1.2);
+}
